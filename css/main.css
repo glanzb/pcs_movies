@@ -1,0 +1,40 @@
+header {
+  
+  overflow: auto;
+}
+
+.wireframe-visible {
+  border: 1px solid gray ;
+}
+header img {
+  background-color: yellow;
+  float: left;
+  margin-right: 1em;
+}
+
+header h1 {
+  margin: 0 0 0 0;
+}
+
+.header-info {
+  float:left;
+}
+.float-left {
+    float:left;
+}
+
+#genre-selector {
+   float: left;
+}
+
+#top-menu {
+  float: right;
+}
+.menu {
+    font-family: Helvetica, sans-serif;
+}
+
+footer {
+  clear:both;
+  border-top: 1px solid grey;
+}
