@@ -13,4 +13,4 @@ Client requirements
 - Movies can be more than one genre
 - If the genre toggle is off, those movies should not display. 
 - If a movie has more than one genre, turning off one genre does.... ? Not clear at this time. 
-- "New" link sholud display the form
+- "New" link should display the form
