@@ -14,3 +14,32 @@ Client requirements
 - If the genre toggle is off, those movies should not display. 
 - If a movie has more than one genre, turning off one genre does.... ? Not clear at this time. 
 - "New" link should display the form
+
+##Variables
+
+* **Movie List**
+** ID = movieList
+* **Title**
+** Label = movie_title
+** Name = movie_title
+** ID = movie_title
+* **Genre**
+** Label = genre
+** Name = genre
+** ID = genre
+* **Year**
+** Label = year
+** Name = year
+** ID = year
+* **Description**
+** Label = descr
+** Name = descr
+** ID = descr
+* **Spoiler**
+** Label = spoiler
+** Name = spoiler
+** ID = spoiler
+* **Submit Button**
+** ID = submitButton
+
+
