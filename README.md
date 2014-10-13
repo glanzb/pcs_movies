@@ -16,7 +16,8 @@ Client requirements
 - "New" link should display the form
 
 ##Variables
-
+* **Form**
+** form.html
 * **Movie List**
 ** ID = movieList
 * **Title**
