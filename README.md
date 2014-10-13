@@ -16,31 +16,31 @@ Client requirements
 - "New" link should display the form
 
 ##Variables
-* **Form**
+* **Form**  
 ** form.html
-* **Movie List**
+* **Movie List**  
 ** ID = movieList
-* **Title**
+* **Title**  
 ** Label = movie_title
 ** Name = movie_title
 ** ID = movie_title
-* **Genre**
+* **Genre**  
 ** Label = genre
 ** Name = genre
 ** ID = genre
-* **Year**
+* **Year**  
 ** Label = year
 ** Name = year
 ** ID = year
-* **Description**
+* **Description**  
 ** Label = descr
 ** Name = descr
 ** ID = descr
-* **Spoiler**
+* **Spoiler**  
 ** Label = spoiler
 ** Name = spoiler
 ** ID = spoiler
-* **Submit Button**
+* **Submit Button**  
 ** ID = submitButton
 
 
