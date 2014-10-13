@@ -17,30 +17,30 @@ Client requirements
 
 ##Variables
 * **Form**  
-** form.html
+  ** form.html
 * **Movie List**  
-** ID = movieList
+  ** ID = movieList
 * **Title**  
-** Label = movie_title
-** Name = movie_title
-** ID = movie_title
+  ** Label = movie_title
+  ** Name = movie_title
+  ** ID = movie_title
 * **Genre**  
-** Label = genre
-** Name = genre
-** ID = genre
+  ** Label = genre
+  ** Name = genre
+  ** ID = genre
 * **Year**  
-** Label = year
-** Name = year
-** ID = year
+  ** Label = year
+  ** Name = year
+  ** ID = year
 * **Description**  
-** Label = descr
-** Name = descr
-** ID = descr
+  ** Label = descr
+  ** Name = descr
+  ** ID = descr
 * **Spoiler**  
-** Label = spoiler
-** Name = spoiler
-** ID = spoiler
+  ** Label = spoiler
+  ** Name = spoiler
+  ** ID = spoiler
 * **Submit Button**  
-** ID = submitButton
+  ** ID = submitButton
 
 
