@@ -1,35 +1,58 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,700);
+
 header {
-  
-  overflow: auto;
+  overflow: auto; 
+}
+
+.section {
+  width: 80%;
+  float: left;
 }
 
 .wireframe-visible {
-  border: 1px solid gray ;
+  border: 4px solid #FFF;
+background-image: url(http://www.transparenttextures.com/patterns/cubes.png);
+  background-color: #E6F4FF;
+
 }
+
 header img {
-  background-color: yellow;
+  background-color: #FFF;
   float: left;
   margin-right: 1em;
+  width:6.8%;
+  height:5.5%;
+  border:1px dashed #3399FF;
+  
 }
 
 header h1 {
-  margin: 0 0 0 0;
+  margin: 5px 0 0 0;
+  color: rgba(87, 123, 159, 0.4);
+  text-shadow: 0 2.5px 0 rgba(0,255,255, .75);
+
 }
 
-.header-info {
-  float:left;
-}
 .float-left {
     float:left;
 }
 
 #genre-selector {
    float: left;
+   padding: 12px 0;
+   color: #FFF ;
+   text-shadow: 1px 1px 3px rgba(0,0,0, .75);
+   font-size: 20px;
 }
 
 #top-menu {
   float: right;
+  padding: 12px 10px;
+  color: #FFF ;
+  text-shadow: 1px 1px 3px rgba(0,0,0, .75);
+  font-size: 20px;
 }
+
 .menu {
     font-family: Helvetica, sans-serif;
 }
@@ -37,4 +60,101 @@ header h1 {
 footer {
   clear:both;
   border-top: 1px solid grey;
+  text-align: center;
+}
+
+table {
+  max-width: 700px;
+}
+
+tr {
+  background: #F0F0F0  ;
+  font-family: 'Nunito', sans-serif;  
+  
+}
+
+.movie_info td {
+    padding-left: 90px;
+}
+
+.description {
+  padding: 20px 15px;
+  -webkit-box-shadow: inset 0px 0px 20px -6px rgba(0,0,0,0.7);
+-moz-box-shadow: inset 0px 0px 20px -6px rgba(0,0,0,0.7);
+box-shadow: inset 0px 0px 20px -6px rgba(0,0,0,0.7);
+}
+
+th {
+  padding: 7px 0;
+  font-size: 1.3em;
+  background-color: #CEDAE5 ;
+  -webkit-box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.7);
+-moz-box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.7);
+box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.7);
+}
+
+.first-on-the-page {
+  display: inline-block;
+  margin: 25px 50px 0px 50px;
+  background-color: /border color /;
+  text-shadow: 0 1px 0 rgba(0,255,255, .75);
+}
+
+table {
+    margin: 35px 0 0 193px;
+    background-color: /border color/;
+    display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+  text-align: left;
+  padding: 0 15px 0;
+  font-size: 17px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #FFF ;
+  text-shadow: 0px 1px 3px rgba(0,0,0, .75);
+}
+
+nav {
+  width: 10%;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  margin: 40px 0 0 15px;
+  border-radius: 7%;
+  
+}
+
+.movie_info {
+  background: #FFF ;
+}
+
+.title_movie {
+  background: #FFFDED;
+}
+
+.page-number {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Nunito', sans-serif;
+  margin : 35px 0 20px 0;
+  color: #577B9F;
+}
+
+.page-number a {
+    text-decoration: none;
+    color: #577B9F;
+}
+
+
+nav a.selected, nav a:hover {
+  color: #C1DEFA;
+  color: #577B9F;
+}
+
+.page-number a.page-selected, .page-selected :hover {
+  color: #000;
 }

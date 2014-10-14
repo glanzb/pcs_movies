@@ -1,50 +1,93 @@
 <!doctype html>
+<head>
+<meta charset="utf-8">
+<title>Movies</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
 <html>
-  <head>
-    <title>Movies!</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-<body>
+<!-- No head needed - it's codepen -->
+
 <!-- TODO: fix the top-men: shjould float to the right-->
 <header class="wireframe-visible">
+
   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53676/movie_logo_small.png" alt="Movies logo" />
   <div class="header-info">
-      <h1>c!</h1>
-    <div id="genre-selector" class="menu">Horror | Date Night | Adventure | Drama</div>
-    <div id="top-menu" class="menu">Spoiler | New</div>
-  </div>
+      <h1>Movies!</h1>
 
+    <div id="genre-selector" class="menu">Horror |  Date Night  |  Adventure  |  Drama </div>
+    <div id="top-menu" class="menu">
+    <a href="" id="spoilToggle">Spoiler</a>
+    <a href="" id="add-new">New</a>
+    </div>
+  </div>
+  
 </header>
 
 <div class="page-body">
   
 <nav  class="wireframe-visible float-left">
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Clients</a></li>
-    <li><a href="#">Contact Us</a></li>
+    <li><a href="#" class="selected">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Careers</a></li>
   </ul>
 </nav>  
 
 <section class="wireframe-visible">
-<ul>
-  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-  <li>Aliquam tincidunt mauris eu risus.</li>
-  <li>Vestibulum auctor dapibus neque.</li>
-</ul>  
-</section>
+  <table class="first-on-the-page">
+  <thead>
+    <tr class="title_movie">
+    <th colspan="3">A Big Movie Title</th>
+    </tr>
+  </thead>
+    <tr class="movie_info">
+    <td>YYYY</td>
+    <td>(rating)</td>
+    <td>Genre</td>
+    </tr>
+    <tr>
+      <td class="description" colspan="3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+    </tr>
+  </table>
   
+  <table>
+  <thead>
+    <tr class="title_movie">
+    <th colspan="3">A Big Movie Title</th>
+    </tr>
+  </thead>
+    <tr class="movie_info">
+    <td>YYYY</td>
+    <td>(rating)</td>
+    <td>Genre</td>
+    </tr>
+    <tr>
+      <td class="description" colspan="3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer<span id="mySpan" hidden = "hidden"> adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer </span>adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+    </tr>
+  </table>
+  
+  <table>
+  <thead>
+    <tr class="title_movie">
+    <th colspan="3">A Big Movie Title</th>
+    </tr>
+  </thead>
+    <tr class="movie_info">
+    <td>YYYY</td>
+    <td>(rating)</td>
+    <td>Genre</td>
+    </tr>
+    <tr>
+      <td class="description" colspan="3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+    </tr>
+  </table>
+  <div class="page-number">Page <a href="#" class="page-selected">1</a> - <a href="#">2</a> - <a href="#">3</a></div>
+
+</section>
 </div>
 
-
 <footer>
-  <p>Watch out!</p>
+  <p>Watch out !</p>
   <p>&copy; 2014 Movie Web Site LLC</p>
 </footer>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
-
-</body>
 </html>
