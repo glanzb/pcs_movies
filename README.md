@@ -21,9 +21,9 @@ Client requirements
 * **Movie List**  
   * ID = movieList
 * **Title**  
-  * Label = movie_title
-  * Name = movie_title
-  * ID = movie_title
+  * Label = title_movie
+  * Name = title_movie
+  * ID = title_movie
 * **Genre**  
   * Label = genre
   * Name = genre
@@ -33,9 +33,9 @@ Client requirements
   * Name = year
   * ID = year
 * **Description**  
-  * Label = descr
-  * Name = descr
-  * ID = descr
+  * Label = description
+  * Name = description
+  * ID = description
 * **Spoiler**  
   * Label = spoiler
   * Name = spoiler
