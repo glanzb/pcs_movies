@@ -1,4 +1,4 @@
-var $overlay = $('<div id="overlay"></div>');
+/* var $overlay = $('<div id="overlay"></div>');
 var $form = $("<form>");
 
 //add form to overlay
@@ -23,7 +23,31 @@ $("#add-new a").click(function(event){
 $overlay.click(function(){
   //Hide the overlay
   $overlay.hide();
+}); 
+
+*/
+
+
+$("#add-new").click(function(){
+  $("form").slideToggle(400);
 });
 
+
+var $button = $("#submitButton"); 
+$button.click(function(){
+
+  var $titleMovie = $('#title_movie').val();
+  //var $genre = $('#genre').val();
+  var $year = $('#year').val();
+  var $description = $('#description').val();
+  var $spoiler = $('#spoiler').val();
+
+
+  $('#movieList').append("<li>" + $titleMovie  + $genre + $year + $description + $spoiler + "</li>");
+
+
+
+  event.preventDefault(); // stops the browser from refreshing the page
+});
 
 
