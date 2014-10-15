@@ -1,3 +1,4 @@
+/*
 var $overlay = $('<div id="overlay"></div>');
 var $form = $("<form>");
 
@@ -24,6 +25,32 @@ $overlay.click(function(){
   //Hide the overlay
   $overlay.hide();
 });
+*/
 
+
+//$("#add-new").click(function(){
+// $("the_form").slideToggle(400);
+//});
+
+
+
+
+//Genre toggles
+$("#horrorToggle").click(function(){
+  $(".horror").slideToggle(400);
+});
+
+$("#romanceToggle").click(function(){
+  $(".romance").toggle();
+});
+
+$("#adventureToggle").click(function(){
+  $(".adventure").slideToggle(400);
+});
+
+$("#dramaToggle").click(function(){
+  $(".drama").toggle();
+});
+//Genre toggles
 
 

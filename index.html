@@ -13,13 +13,58 @@
   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53676/movie_logo_small.png" alt="Movies logo" />
   <div class="header-info">
       <h1>Movies!</h1>
-    <div id="genre-selector" class="menu">Horror |  Date Night  |  Adventure  |  Drama </div>
+    <div id="genre-selector" class="menu">
+      <button id="horrorToggle">Horror</button>
+      <button id="romanceToggle">Date Night</button>
+      <button id="adventureToggle">Adventure</button>
+      <button id="dramaToggle">Drama</button>
+    </div>
     <div id="top-menu" class="menu">
     <a href="" id="spoilToggle">Spoiler</a>
-    <a href="" id="add-new">New</a>
+    <a href="form.html" id="add-new">New</a>
     </div>
   </div>
-  
+  <div class="form grey_box">
+        <form id="the_form" action="#">
+          <div>
+            <label for="movie_title">Movie title</label>
+            <input type="text" name="movie_title" id="movie_title" placeholder="Title" /> 
+          </div>
+
+          <div>
+            <label for="genre">Genre:</label>
+            <select name="genre" id="genre" placeholder="Genre">
+              <option value="horror">Horror</option>
+              <option value="datenight">Date night</option>
+              <option value="adventure">Adventure</option>
+              <option value="drama">Drama</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="year">Year:</label>
+            <input type="text" name="year" id="year" placeholder="MM/DD/YYYY" />
+          </div>
+
+          <div>
+            <label for="descr">Description:</label>
+            <textarea name="descr" id="descr" placeholder="Description"></textarea> 
+          </div>
+
+          <div>
+            <label for="spoiler">Spoiler:</label>
+            <textarea name="spoiler" id="spoiler" placeholder="Spoiler!"></textarea> 
+          </div>
+
+          <div>
+            <button id="submitButton" type="button">Add to list</button>
+          </div>
+        </form>  
+      </div>
+
+      <div class="list grey_box">
+        <ul id="movieList"></ul>  
+      </div>
 </header>
 <body>
 <div class="page-body">
@@ -86,7 +131,6 @@
 </div>
 
 <footer>
-  <p>Watch out !</p>
   <p>&copy; 2014 Movie Web Site LLC</p>
 </footer>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
