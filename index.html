@@ -24,47 +24,6 @@
     <a href="form.html" id="add-new">New</a>
     </div>
   </div>
-  <div class="form grey_box">
-        <form id="the_form" action="#">
-          <div>
-            <label for="movie_title">Movie title</label>
-            <input type="text" name="movie_title" id="movie_title" placeholder="Title" /> 
-          </div>
-
-          <div>
-            <label for="genre">Genre:</label>
-            <select name="genre" id="genre" placeholder="Genre">
-              <option value="horror">Horror</option>
-              <option value="datenight">Date night</option>
-              <option value="adventure">Adventure</option>
-              <option value="drama">Drama</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="year">Year:</label>
-            <input type="text" name="year" id="year" placeholder="MM/DD/YYYY" />
-          </div>
-
-          <div>
-            <label for="descr">Description:</label>
-            <textarea name="descr" id="descr" placeholder="Description"></textarea> 
-          </div>
-
-          <div>
-            <label for="spoiler">Spoiler:</label>
-            <textarea name="spoiler" id="spoiler" placeholder="Spoiler!"></textarea> 
-          </div>
-
-          <div>
-            <button id="submitButton" type="button">Add to list</button>
-          </div>
-        </form>  
-      </div>
-
-      <div class="list grey_box">
-        <ul id="movieList"></ul>  
-      </div>
 </header>
 <body>
 <div class="form grey_box">
@@ -106,13 +65,7 @@
         </form>  
       </div>
 
-      <div class="list grey_box">
-        <ul id="movieList"></ul>  
-      </div>
-    </div>
-
 <div class="page-body">
-  
 <nav  class="wireframe-visible float-left">
   <ul>
     <li><a href="#" class="selected">Home</a></li>
@@ -121,9 +74,11 @@
   </ul>
 </nav>  
 
-
 <section class="wireframe-visible">
-  <table class="first-on-the-page">
+        <div class="list grey_box">
+        <ul id="movieList"></ul>  
+      </div>
+  <table class="horror">
   <thead>
     <tr class="title_movie">
     <th colspan="3">A Big Movie Title</th>
