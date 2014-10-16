@@ -42,10 +42,12 @@ $button.click(function(){
   var $year = $('#year').val();
   var $description = $('#description').val();
   var $spoiler = $('#spoiler').val();
+  var $classname = $('#genre').val();
   
-  var $movieString = "<span class='$genre'>" + "<li>" + "    " + $titleMovie + "    " + $genre + "    " + $year + "    " + $description + "    " + $spoiler + "    " + "</li>" + "</span>";
+  var $movieString = "<li>" + "    " + $titleMovie + "    " + $genre + "    " + $year + "    " + $description + "    " + $spoiler + "    " + "</li>" + "</span>";
 
   $('#movieList').append($movieString);
+$('.movieList').children('.distributionWrapper:last').addClass($genre);
 
   event.preventDefault(); // stops the browser from refreshing the page
 
