@@ -1,3 +1,6 @@
+/*jslint browser: true*/
+/*global $, jQuery*/
+
 /*
 var $overlay = $('<div id="overlay"></div>');
 var $form = $("<form>");
@@ -27,12 +30,30 @@ $overlay.click(function(){
 });
 */
 
+//$("#add-new").click(function(){
+//  $("form").slideToggle(400);
+//});
+
 
 //$("#add-new").click(function(){
 // $("the_form").slideToggle(400);
 //});
 
 
+$('document').ready(function() {
+	console.log("ready!");
+});
+
+var $button = $("#submitButton"); 
+$button.click(function(){
+  var $titleMovie = $('#title_movie').val();
+  //var $genre = $('#genre').val();
+  var $year = $('#year').val();
+  var $description = $('#description').val();
+  var $spoiler = $('#spoiler').val();
+  $('#movieList').append('<li> + $titleMovie  + genre + year + description + spoiler + </li>');
+  event.preventDefault(); // stops the browser from refreshing the page
+});
 
 
 //Genre toggles
