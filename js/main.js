@@ -30,31 +30,26 @@ $overlay.click(function(){
 });
 */
 
-//$("#add-new").click(function(){
-//  $("form").slideToggle(400);
-//});
-
-
-//$("#add-new").click(function(){
-// $("the_form").slideToggle(400);
-//});
-
-
-$('document').ready(function() {
-	console.log("ready!");
-});
 
 var $button = $("#submitButton"); 
+
+
 $button.click(function(){
+
   var $titleMovie = $('#title_movie').val();
-  //var $genre = $('#genre').val();
+  var $genre = $('#genre').val();
+  // var $genre = "horror"
   var $year = $('#year').val();
   var $description = $('#description').val();
   var $spoiler = $('#spoiler').val();
-  $('#movieList').append('<li> + $titleMovie  + genre + year + description + spoiler + </li>');
-  event.preventDefault(); // stops the browser from refreshing the page
-});
+  
+  var $movieString = "<span class='$genre'>" + "<li>" + "    " + $titleMovie + "    " + $genre + "    " + $year + "    " + $description + "    " + $spoiler + "    " + "</li>" + "</span>";
 
+  $('#movieList').append($movieString);
+
+  event.preventDefault(); // stops the browser from refreshing the page
+
+});
 
 //Genre toggles
 $("#horrorToggle").click(function(){
@@ -62,7 +57,7 @@ $("#horrorToggle").click(function(){
 });
 
 $("#romanceToggle").click(function(){
-  $(".romance").toggle();
+  $(".datenight").slideToggle(400);
 });
 
 $("#adventureToggle").click(function(){
@@ -70,8 +65,14 @@ $("#adventureToggle").click(function(){
 });
 
 $("#dramaToggle").click(function(){
-  $(".drama").toggle();
+  $(".drama").slideToggle(400);
 });
 //Genre toggles
 
+$("#addToggle").click(function(){
+  $(".form").slideToggle(400);
+});
 
+$("#spoilToggle").click(function(){
+  $(".spoiler").slideToggle(400);
+});

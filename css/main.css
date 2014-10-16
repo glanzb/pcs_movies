@@ -26,7 +26,7 @@ header img {
   
 }
 
-header h1 {
+h1 {
   margin: 5px 0 0 0;
   color: rgba(87, 123, 159, 0.4);
   text-shadow: 0 2.5px 0 rgba(0,255,255, .75);
@@ -170,6 +170,19 @@ nav a.selected, nav a:hover {
   text-align:center;
 }
 
+.listOfMovies {
+  border-width: 1px;
+  margin-left: 14%;
+  margin-top: 30px;
+}
+
+.listOfMovies ul {
+  list-style: none;
+  text-align: left;
+  padding: 0 15px 0;
+  font-size: 17px;
+}
+
 /////ABOUT US PAGE///
 
 .picture {
@@ -223,6 +236,10 @@ color: rgba(255, 255, 255, 0.4);
 box-shadow: inset 0px 0px 61px -23px rgba(0,0,0,0.75);
   
   border-radius: 5px 5px 5px 5px;
+}
+
+.list {
+  min-height: 300px;
 }
 
 
