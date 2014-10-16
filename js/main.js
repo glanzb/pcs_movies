@@ -34,16 +34,20 @@ $("#add-new").click(function(){
 
 
 var $button = $("#submitButton"); 
+
+
 $button.click(function(){
 
   var $titleMovie = $('#title_movie').val();
-  //var $genre = $('#genre').val();
+  var $genre = $('#genre').val();
+  // var $genre = "horror"
   var $year = $('#year').val();
   var $description = $('#description').val();
   var $spoiler = $('#spoiler').val();
+  
+  var $movieString = "<li>" + $titleMovie  + $genre + $year + $description + $spoiler + "</li>";
 
-
-  $('#movieList').append("<li>" + $titleMovie  + $genre + $year + $description + $spoiler + "</li>");
+  $('#movieList').append($movieString);
 
 
 
