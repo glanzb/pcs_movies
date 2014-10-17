@@ -67,21 +67,22 @@ footer {
   text-align: center;
 }
 
-table {
-  max-width: 700px;
-}
-
 tr {
   background: #F0F0F0  ;
   font-family: 'Nunito', sans-serif;  
   
 }
 
+#movieList {
+  with: 100%;
+  min-height: 300px;
+}
+
 .movie_info td {
     padding-left: 90px;
 }
 
-.description {
+.description .spoiler {
   padding: 20px 15px;
   -webkit-box-shadow: inset 0px 0px 20px -6px rgba(0,0,0,0.7);
 -moz-box-shadow: inset 0px 0px 20px -6px rgba(0,0,0,0.7);
@@ -105,9 +106,9 @@ box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.7);
 }
 
 table {
-    margin: 35px 0 0 193px;
+    margin: 2%;
     background-color: /border color/;
-    display: inline-block;
+    display: block;
 }
 
 nav ul {
