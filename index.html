@@ -16,39 +16,38 @@
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53676/movie_logo_small.png" alt="Movies logo" />
     <div class="header-info">
       <h1>Movies!</h1>
-      <div id="genre-selector" class="menu">
-        <button id="horrorToggle">Horror</button>
-        <button id="romanceToggle">Date Night</button>
-        <button id="adventureToggle">Adventure</button>
-        <button id="dramaToggle">Drama</button>
-      </div>
-      <div id="top-menu" class="menu">
-        <button id="spoilToggle">Spoiler</button>
-        <button id="addToggle">New</button>
-      </div>
+    <div id="genre-selector" class="menu">
+      <a href="#" id="horrorToggle">Horror</a>
+      <a href="#" id="romanceToggle">Date Night</a>
+      <a href="#" id="adventureToggle">Adventure</a>
+      <a href="#" id="dramaToggle">Drama</a>
     </div>
+    <div id="top-menu" class="menu">
+    <a href="#" id="spoilToggle">Spoilers</a>
+    <a href="#" id="add-new">New</a>
+    </div>
+  </div>
   </header>
 <body>
-  <div class="form grey_box add">
-    <form id="the_form" action="#">
-      <div>
-        <label for="title_movie">Movie title</label>
-        <input type="text" name="title_movie" id="title_movie" placeholder="Title" />
-      </div>
-      <div>
-        <label for="genre">Genre:</label>
-        <select name="genre" id="genre" class="genreSelect" placeholder="Genre">
-          <option value="horror">Horror</option>
-          <option value="datenight">Date night</option>
-          <option value="adventure">Adventure</option>
-          <option value="drama">Drama</option>
-        </select>
-      </div>
-      <div>
-        <label for="year">Year:</label>
-        <input type="text" name="year" id="year" placeholder="MM/DD/YYYY" />
-      </div>
-
+<div class="form grey_box">
+        <form id="the_form" action="#" style="display:none;">
+          <div>
+            <label for="title_movie">Movie title</label>
+            <input type="text" name="title_movie" id="title_movie" placeholder="Title" /> 
+          </div>          
+          <div>
+            <label for="genre">Genre:</label>
+            <select name="genre" id="genre" placeholder="Genre">
+              <option value="horror">Horror</option>
+              <option value="datenight">Date night</option>
+              <option value="adventure">Adventure</option>
+              <option value="drama">Drama</option>
+            </select>
+          </div>
+          <div>
+            <label for="year">Year:</label>
+            <input type="text" name="year" id="year" placeholder="MM/DD/YYYY" />
+          </div>
       <div>
         <label for="description">Description:</label>
         <textarea name="description" id="description" placeholder="Description"></textarea>
@@ -65,20 +64,14 @@
     </form>
   </div>
 
-  <div class="page-body">
-    <nav  class="wireframe-visible float-left">
-      <ul>
-        <li>
-          <a href="index.html" class="selected">Home</a>
-        </li>
-        <li>
-          <a href="about.html">About Us</a>
-        </li>
-        <li>
-          <a href="careers.html">Careers</a>
-        </li>
-      </ul>
-    </nav>
+<div class="page-body">
+<nav  class="wireframe-visible float-left">
+  <ul>
+    <li><a href="index.html" class="selected">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="careers.html">Careers</a></li>
+  </ul>
+</nav>  
 
     <section class="wireframe-visible">
       <div class="list grey_box">

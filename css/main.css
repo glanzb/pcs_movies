@@ -183,6 +183,10 @@ nav a.selected, nav a:hover {
   font-size: 17px;
 }
 
+.spoiler {
+  display: none;
+}
+
 /////ABOUT US PAGE///
 
 .picture {
@@ -220,7 +224,6 @@ p {
   text-shadow: 0 1.5px 0 rgba(0,255,255, .75);
   font-family: Helvetica, sans-serif;
     color: #000;
-
 }
 
 #wrapper {

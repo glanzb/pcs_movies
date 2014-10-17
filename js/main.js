@@ -1,8 +1,4 @@
-/*jslint browser: true*/
-/*global $, jQuery*/
-
-/*
-var $overlay = $('<div id="overlay"></div>');
+/* var $overlay = $('<div id="overlay"></div>');
 var $form = $("<form>");
 
 //add form to overlay
@@ -27,9 +23,15 @@ $("#add-new a").click(function(event){
 $overlay.click(function(){
   //Hide the overlay
   $overlay.hide();
-});
+}); 
+
 */
 
+
+$("#add-new").click(function(toggle){
+  $("form").slideToggle(400);
+  toggle.preventDefault;
+});
 
 var $button = $("#submitButton"); 
 
@@ -38,22 +40,19 @@ $button.click(function(){
 
   var $titleMovie = $('#title_movie').val();
   var $genre = $('#genre').val();
-  // var $genre = "horror"
   var $year = $('#year').val();
   var $description = $('#description').val();
   var $spoiler = $('#spoiler').val();
-  var $classname = $('#genre').val();
-  
-  var $movieString = "<li>" + "    " + $titleMovie + "    " + $genre + "    " + $year + "    " + $description + "    " + $spoiler + "    " + "</li>" + "</span>";
+
+  var $movieString = "<li>" + $titleMovie  + "    " + $genre + "    " + $year + "    " + $description + "    " + $spoiler + "</li>";
 
   $('#movieList').append($movieString);
-$('.movieList').children('.distributionWrapper:last').addClass($genre);
 
   event.preventDefault(); // stops the browser from refreshing the page
 
 });
 
-//Genre toggles
+
 $("#horrorToggle").click(function(){
   $(".horror").slideToggle(400);
 });
@@ -68,11 +67,6 @@ $("#adventureToggle").click(function(){
 
 $("#dramaToggle").click(function(){
   $(".drama").slideToggle(400);
-});
-//Genre toggles
-
-$("#addToggle").click(function(){
-  $(".form").slideToggle(400);
 });
 
 $("#spoilToggle").click(function(){
