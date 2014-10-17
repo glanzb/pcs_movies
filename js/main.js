@@ -39,14 +39,8 @@ $('#spoilToggle').click(function(){
 
 
 $("button").click(function (){
-var $class = $(this).val();
-  $('.' + $class).toggle();
+  var $this = $(this);
+  var $class = $(this).val();
+  $("." + $class).toggle();
   $(this).toggleClass("disabled");
 });
-
-
-
-
-
-
-
