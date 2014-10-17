@@ -44,7 +44,7 @@ $button.click(function(){
   var $description = $('#description').val();
   var $spoiler = $('#spoiler').val();
   
-  var $movieString = "<li>" + $titleMovie  + $genre + $year + $description + $spoiler + "</li>";
+  var $movieString = "<tr class='title_movie'>" + "<th colspan='3'>" + $titleMovie  + "</th>" + "</tr>" + "<tr class='movie_info'>" + "<td>" + $genre + "</td>" + "<td>" + "</td>" + "<td>"+ $year + "</td>" + "</tr>" + "<tr>" + "<td class='description' colspan='3'>" + $description + "</td>" + "</tr>" + "<tr id='movieSpoiler'>" + "<td colspan='3'>" + $spoiler + "</td>" + "</tr>";
 
   $('#movieList').append($movieString);
 
@@ -53,23 +53,32 @@ $button.click(function(){
   event.preventDefault(); // stops the browser from refreshing the page
 });
 
-
-
-$("#horrorToggle").click(function(){
-  $(".horror").slideToggle(400);
+$("#spoilToggle").click(function(){
+  var $movieSpoiler = $('#movieSpoiler');
+  $(movieSpoiler).toggle();
 });
 
-$("#romanceToggle").click(function(){
-  $(".romance").toggle();
-});
 
-$("#adventureToggle").click(function(){
-  $(".adventure").slideToggle(400);
-});
 
-$("#dramaToggle").click(function(){
-  $(".drama").toggle();
-});
+// $("#horrorToggle").click(function(){
+//   $("#horror").show(400);
+//   $("#romance").hide(400);
+//   $("#adventure").hide(400);
+//   $("#drama").hide(400);
+
+// });
+
+// $("#romanceToggle").click(function(){
+//   $(".romance").toggle();
+// });
+
+// $("#adventureToggle").click(function(){
+//   $(".adventure").slideToggle(400);
+// });
+
+// $("#dramaToggle").click(function(){
+//   $(".drama").toggle();
+// });
 
 
 
