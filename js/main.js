@@ -34,20 +34,43 @@ $("#add-new").click(function(){
 
 
 var $button = $("#submitButton"); 
+
+
 $button.click(function(){
 
   var $titleMovie = $('#title_movie').val();
-  //var $genre = $('#genre').val();
+  var $genre = $('#genre').val();
   var $year = $('#year').val();
   var $description = $('#description').val();
   var $spoiler = $('#spoiler').val();
+  
+  var $movieString = "<li>" + $titleMovie  + $genre + $year + $description + $spoiler + "</li>";
 
-
-  $('#movieList').append("<li>" + $titleMovie  + $genre + $year + $description + $spoiler + "</li>");
+  $('#movieList').append($movieString);
 
 
 
   event.preventDefault(); // stops the browser from refreshing the page
 });
+
+
+
+$("#horrorToggle").click(function(){
+  $(".horror").slideToggle(400);
+});
+
+$("#romanceToggle").click(function(){
+  $(".romance").toggle();
+});
+
+$("#adventureToggle").click(function(){
+  $(".adventure").slideToggle(400);
+});
+
+$("#dramaToggle").click(function(){
+  $(".drama").toggle();
+});
+
+
 
 
