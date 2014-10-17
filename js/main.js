@@ -44,8 +44,7 @@ $button.click(function(){
   var $description = $('#description').val();
   var $spoiler = $('#spoiler').val();
 
-  var $movieString = "<li>" + $titleMovie  + "    " + $genre + "    " + $year + "    " + $description + "    " + $spoiler + "</li>";
-
+var $movieString = "<li>" + "<table class='horror'>" + "<tr class='title_movie'>" + "<th colspan='2'>" + $titleMovie  + "</th>" + "</tr>" + "<td>" + "<tr>" + $genre + "</td>" + "<td>" + $year + "</td>" + "</tr>" + "<tr>" + "<td colspan='2'>" + $description + "</td>" + "</tr>" + "<tr>" + "<td colspan='2'>" + $spoiler + "</td>" + "</tr>" + "</table>" + "</li>";
   $('#movieList').append($movieString);
 
   event.preventDefault(); // stops the browser from refreshing the page
