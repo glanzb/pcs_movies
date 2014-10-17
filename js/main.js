@@ -40,7 +40,6 @@ $button.click(function(){
 
   var $titleMovie = $('#title_movie').val();
   var $genre = $('#genre').val();
-  // var $genre = "horror"
   var $year = $('#year').val();
   var $description = $('#description').val();
   var $spoiler = $('#spoiler').val();
@@ -53,5 +52,25 @@ $button.click(function(){
 
   event.preventDefault(); // stops the browser from refreshing the page
 });
+
+
+
+$("#horrorToggle").click(function(){
+  $(".horror").slideToggle(400);
+});
+
+$("#romanceToggle").click(function(){
+  $(".romance").toggle();
+});
+
+$("#adventureToggle").click(function(){
+  $(".adventure").slideToggle(400);
+});
+
+$("#dramaToggle").click(function(){
+  $(".drama").toggle();
+});
+
+
 
 
