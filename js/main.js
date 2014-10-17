@@ -1,31 +1,6 @@
-/* var $overlay = $('<div id="overlay"></div>');
-var $form = $("<form>");
-
-//add form to overlay
-$overlay.append($form);
-
-//Add overlay
-$("body").append($overlay);
-
-
-//Capture the click event on a link to an image
-$("#add-new a").click(function(event){
-  event.preventDefault();
-  var formLocation = $(this).attr("href");
-  //Update overlay with the image linked in the link
-  $form.attr("src", formLocation);
-  
-  //Show the overlay.
-  $overlay.show();
-  
-
-//When overlay is clicked
-$overlay.click(function(){
-  //Hide the overlay
-  $overlay.hide();
-}); 
-
-*/
+$( document ).ready(function() {
+  $("form").hide();
+});
 
 
 $("#add-new").click(function(){
@@ -43,42 +18,34 @@ $button.click(function(){
   var $year = $('#year').val();
   var $description = $('#description').val();
   var $spoiler = $('#spoiler').val();
+
+  // var $genreVal = $("'.' + $genre");
   
-  var $movieString = "<tr class='title_movie'>" + "<th colspan='3'>" + $titleMovie  + "</th>" + "</tr>" + "<tr class='movie_info'>" + "<td>" + $genre + "</td>" + "<td>" + "</td>" + "<td>"+ $year + "</td>" + "</tr>" + "<tr>" + "<td class='description' colspan='3'>" + $description + "</td>" + "</tr>" + "<tr id='movieSpoiler'>" + "<td colspan='3'>" + $spoiler + "</td>" + "</tr>";
+  var $movieString = "<table class=" + $genre +">" + "<tr class='title_movie'>" + "<th colspan='3'>" + $titleMovie  + "</th>" + "</tr>" + "<tr class='movie_info'>" + "<td>" + $genre + "</td>" + "<td>" + "</td>" + "<td>"+ $year + "</td>" + "</tr>" + "<tr>" + "<td class='description' colspan='3'>" + $description + "</td>" + "</tr>" + "<tr class='spoiler'>" + "<td colspan='3'>" + $spoiler + "</td>" + "</tr>" + "</table>" ;
 
   $('#movieList').append($movieString);
-
-
 
   event.preventDefault(); // stops the browser from refreshing the page
 });
 
-$("#spoilToggle").click(function(){
-  var $movieSpoiler = $('#movieSpoiler');
-  $(movieSpoiler).toggle();
+
+
+$('#spoilToggle').click(function(){
+  
+  $('.spoiler').toggle();
+   event.preventDefault(); 
 });
 
 
 
-// $("#horrorToggle").click(function(){
-//   $("#horror").show(400);
-//   $("#romance").hide(400);
-//   $("#adventure").hide(400);
-//   $("#drama").hide(400);
+$("button").click(function (){
+var $class = $(this).val();
+  $('.' + $class).toggle();
+  $(this).toggleClass("disabled");
+});
 
-// });
 
-// $("#romanceToggle").click(function(){
-//   $(".romance").toggle();
-// });
 
-// $("#adventureToggle").click(function(){
-//   $(".adventure").slideToggle(400);
-// });
-
-// $("#dramaToggle").click(function(){
-//   $(".drama").toggle();
-// });
 
 
 
