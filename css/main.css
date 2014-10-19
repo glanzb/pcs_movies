@@ -22,8 +22,6 @@ header img {
   margin-right: 1em;
   width:7.8%;
   height:14.8%;
-  border:1px dashed #3399FF;
-  
 }
 
 header h1 {
@@ -67,21 +65,6 @@ footer {
   text-align: center;
 }
 
-tr {
-  background: #F0F0F0  ;
-  font-family: 'Nunito', sans-serif;  
-  
-}
-
-#movieList {
-  with: 100%;
-  min-height: 300px;
-}
-
-.movie_info td {
-    padding-left: 90px;
-}
-
 .description .spoiler {
   padding: 20px 15px;
   -webkit-box-shadow: inset 0px 0px 20px -6px rgba(0,0,0,0.7);
@@ -89,14 +72,6 @@ tr {
 box-shadow: inset 0px 0px 20px -6px rgba(0,0,0,0.7);
 }
 
-th {
-  padding: 7px 0;
-  font-size: 1.3em;
-  background-color: #CEDAE5 ;
-  -webkit-box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.7);
--moz-box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.7);
-box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.7);
-}
 
 .first-on-the-page {
   display: inline-block;
@@ -105,11 +80,15 @@ box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.7);
   text-shadow: 0 1px 0 rgba(0,255,255, .75);
 }
 
-table {
-    margin: 2%;
-    background-color: /border color/;
-    display: block;
+nav {
+  min-width: 10%;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  margin: 2% 2% 0 15px;
+  border-radius: 7%;
+  overflow: hidden
 }
+
 
 nav ul {
   list-style: none;
@@ -124,13 +103,44 @@ nav li a {
   text-shadow: 0px 1px 3px rgba(0,0,0, .75);
 }
 
-nav {
-  width: 10%;
-  font-family: 'Nunito', sans-serif;
-  display: inline-block;
-  margin: 40px 0 0 15px;
-  border-radius: 7%;
-  
+
+nav a.selected, nav a:hover {
+  color: #C1DEFA;
+  color: #577B9F;
+}
+
+
+table {
+    margin: 2% 25% 1% 1%;
+    background-color: /border color/;
+    display: block;
+    width: 70%;
+    float: right;
+}
+
+tr {
+  background: #F0F0F0  ;
+  font-family: 'Nunito', sans-serif;  
+}
+
+th {
+    width: 50%;
+    padding: 7px 0;
+    font-size: 1.3em;
+    background-color: #CEDAE5 ;
+    -webkit-box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.7);
+    -moz-box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.7);
+    box-shadow: inset 0px 0px 24px -6px rgba(0,0,0,0.7);
+}
+
+#movieList {
+  with: 100%;
+  min-height: 600px;
+    overflow:hidden;
+}
+
+.movie_info td {
+    padding-left: 90px;
 }
 
 .movie_info {
@@ -139,29 +149,6 @@ nav {
 
 .title_movie {
   background: #FFFDED;
-}
-
-.page-number {
-  text-align: center;
-  font-size: 1.2em;
-  font-family: 'Nunito', sans-serif;
-  margin : 35px 0 20px 0;
-  color: #577B9F;
-}
-
-.page-number a {
-    text-decoration: none;
-    color: #577B9F;
-}
-
-
-nav a.selected, nav a:hover {
-  color: #C1DEFA;
-  color: #577B9F;
-}
-
-.page-number a.page-selected, .page-selected :hover {
-  color: #000;
 }
 
 #overlay {
