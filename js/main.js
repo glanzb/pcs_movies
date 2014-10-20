@@ -23,9 +23,9 @@ $button.click(function(){
 
   // var $genreVal = $("'.' + $genre");
   
-  var $movieString = "<table class=" + $genre +">" + "<tr class='title_movie'>" + "<th colspan='3'>" + $titleMovie  + "</th>" + "</tr>" + "<tr class='movie_info'>" + "<td class='year'>" + $year + "</td>" + "<td>" + $rating + " star" + "</td>" +  "<td>" + $genre + "</td>" + "</tr>" + "<tr>" + "<td class='description' colspan='3'>" + $description + "</td>" + "</tr>" + "<tr>" + "<td class='spoiler' colspan='3'>" + $spoiler + "</td>" + "</tr>" + "</table>" ;
+  var $movieString = "<table class='" + $genre + "'>" + "<thead>" + "<tr class='title_movie'>" + "<th colspan='3'>" + $titleMovie  + "</th>" + "</tr>" + "</thead>" + "<tr class='movie_info'>" + "<td class='year'>" + $year + "</td>" + "<td>" + $rating + " star" + "</td>" +  "<td class='genre'>" + $genre + "</td>" + "</tr>" + "<tr>" + "<td class='description' colspan='3'>" + $description + "</td>" + "</tr>" + "<tr>" + "<td class='spoiler' colspan='3'>" + $spoiler + "</td>" + "</tr>" + "</table>" ;
 
-  $('#movieList').append($movieString);
+  $('#movieList').prepend($movieString);
 
   event.preventDefault(); // stops the browser from refreshing the page
 });

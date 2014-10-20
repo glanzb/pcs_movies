@@ -17,7 +17,7 @@ background-image: url(http://www.transparenttextures.com/patterns/cubes.png);
 }
 
 form {
-    float: right;
+  float: right;
     width: 15%;
     line-height: 1.5em;
     font-family: Helvetica, sans-serif;
@@ -126,7 +126,7 @@ tr {
 }
 
 th {
-    width: 40%;
+    width: 10%;
     padding: 7px;
     font-size: 1.3em;
     background-color: #CEDAE5 ;
@@ -143,6 +143,7 @@ th {
 
 .movie_info td {
     padding: 10px 10px;
+    text-transform: capitalize;
 }
 
 .movie_info {
