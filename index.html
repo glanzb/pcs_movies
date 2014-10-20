@@ -2,89 +2,176 @@
 <head>
 <meta charset="utf-8">
 <title>Movies</title>
-<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
+<link rel="stylesheet" type="text/css" href="css/main.css"></head>
 <html>
-<!-- No head needed - it's codepen -->
+  <!-- No head needed - it's codepen -->
 
-<!-- TODO: fix the top-men: shjould float to the right-->
-<header class="wireframe-visible">
+  <!-- TODO: fix the top-men: shjould float to the right-->
+  <header class="wireframe-visible">
 
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53676/movie_logo_small.png" alt="Movies logo" />
-  <div class="header-info">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53676/movie_logo_small.png" alt="Movies logo" />
+    <div class="header-info">
       <h1>Movies!</h1>
-    <div id="genre-selector" class="menu">
-      <button value="horror" id="horrorToggle">Horror</button>
-      <button value="datenight" id="romanceToggle">Date Night</button>
-      <button value="adventure" id="adventureToggle">Adventure</button>
-      <button value="drama" id="dramaToggle">Drama</button>
+      <div id="genre-selector" class="menu">
+        <button value="horror" id="horrorToggle">Horror</button>
+        <button value="romance" id="romanceToggle">Romance</button>
+        <button value="adventure" id="adventureToggle">Adventure</button>
+        <button value="drama" id="dramaToggle">Drama</button>
+      </div>
+      <div id="top-menu" class="menu">
+        <a href="" id="spoilToggle">Spoiler</a>
+        <a href="#" id="add-new">New</a>
+      </div>
     </div>
-    <div id="top-menu" class="menu">
-    <a href="" id="spoilToggle">Spoiler</a>
-    <a href="#" id="add-new">New</a>
-    </div>
-  </div>
-</header>
+  </header>
 <body>
-<div class="form grey_box">
-        <form id="the_form" action="#">
-          <div>
-            <label for="title_movie">Movie title</label>
-            <input type="text" name="title_movie" id="title_movie" placeholder="Title" /> 
-          </div>
-
-          
-          <div>
-            <label for="genre">Genre:</label>
-            <select name="genre" id="genre" placeholder="Genre">
-              <option value="horror">Horror</option>
-              <option value="datenight">Date night</option>
-              <option value="adventure">Adventure</option>
-              <option value="drama">Drama</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="year">Year:</label>
-            <input type="text" name="year" id="year" placeholder="MM/DD/YYYY" />
-          </div>
-
-          <div>
-            <label for="description">Description:</label>
-            <textarea name="description" id="description" placeholder="Description"></textarea> 
-          </div>
-
-          <div>
-            <label for="spoiler">Spoiler:</label>
-            <textarea name="spoiler" id="spoiler" placeholder="Spoiler!"></textarea> 
-          </div>
-
-          <div>
-            <button id="submitButton">Add to list</button>
-          </div>
-        </form>  
+  <div class="form grey_box">
+    <form id="the_form" action="#">
+      <div>
+        <label for="title_movie">Movie title:</label>
+        <input type="text" name="title_movie" id="title_movie" placeholder="Title" />
       </div>
 
-<div class="page-body">
-<nav  class="wireframe-visible float-left">
-  <ul>
-    <li><a href="index.html" class="selected">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="careers.html">Careers</a></li>
-  </ul>
-</nav>  
-
-<section class="wireframe-visible">
-        <div id="movieList" >
-          
-          
+      <div>
+        <label for="genre">Genre:</label>
+        <select name="genre" id="genre" placeholder="Genre">
+          <option value="horror">Horror</option>
+          <option value="romance">Romance</option>
+          <option value="adventure">Adventure</option>
+          <option value="drama">Drama</option>
+        </select>
       </div>
-</section>
-</div>
+      <div>
+        <label for="rating">Rating:</label>
+        <select name="rating" id="rating" placeholder="Rating">
+          <option value="1">1 star</option>
+          <option value="2">2 star</option>
+          <option value="3">3 star</option>
+          <option value="4">4 star</option>
+          <option value="5">5 star</option>
+        </select>
+      </div>
+      <div>
+        <label for="year">Year:</label>
+        <input type="text" name="year" id="year" placeholder="MM/DD/YYYY" />
+      </div>
 
-<footer>
-  <p>&copy; 2014 Movie Web Site LLC</p>
-</footer>
+      <div>
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" placeholder="Description"></textarea>
+      </div>
+
+      <div>
+        <label for="spoiler">Spoiler:</label>
+        <textarea name="spoiler" id="spoiler" placeholder="Spoiler!"></textarea>
+      </div>
+
+      <div>
+        <button id="submitButton">Add to list</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="page-body">
+    <nav  class="wireframe-visible float-left">
+      <ul>
+        <li>
+          <a href="index.html" class="selected">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="careers.html">Careers</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="wireframe-visible">
+      <div id="movieList" >
+        <table class="romance">
+          <thead>
+            <tr class="title_movie">
+              <th colspan="3">How to Lose a Guy in 10 Days</th>
+            </tr>
+          </thead>
+          <tr class="movie_info">
+            <td>2003</td>
+            <td>5 star</td>
+            <td>Romance</td>
+          </tr>
+          <tr>
+            <td class="description" colspan="3">
+              Benjamin Barry (Matthew McConaughey) is an advertising executive and ladies' man who, to win a big campaign, bets that he can make a woman fall in love with him in 10 days. Andie Anderson covers the "How To" beat for "Composure" magazine and is assigned to write an article on "How to Lose a Guy in 10 days."
+            </td>
+          </tr>
+          <tr>
+            <td class="spoiler" colspan="3">They wind up together.</td>
+          </tr>
+        </table>
+        <table class="drama">
+          <thead>
+            <tr class="title_movie">
+              <th colspan="3">Dallas Buyer's Club</th>
+            </tr>
+          </thead>
+          <tr class="movie_info">
+            <td>2013</td>
+            <td>5 star</td>
+            <td>Drama</td>
+          </tr>
+          <tr>
+            <td class="description" colspan="3">
+              Ron Woodroof (Matthew McConaughey) was an AIDS patient diagnosed in the mid 1980s when HIV/AIDS treatments were under-researched, while the disease was not understood and highly stigmatized. As part of the experimental AIDS treatment movement, he smuggled unapproved pharmaceutical drugs into Texas for treating his symptoms, and distributed them to fellow people with AIDS by establishing the "Dallas Buyers Club" while facing opposition from the Food and Drug Administration (FDA).
+            </td>
+          </tr>
+        </table>
+
+        <table class="horror">
+          <thead>
+            <tr class="title_movie">
+              <th colspan="3">Frailty</th>
+            </tr>
+          </thead>
+          <tr class="movie_info">
+            <td class='year'>2001</td>
+            <td>5 star</td>
+            <td>Horror</td>
+          </tr>
+          <tr>
+            <td class="description" colspan="3">
+              FBI agent Wesley Doyle is startled by the spontaneous declaration of youngster Fenton Meiks (Matthew McConaughey) about how his father's delusions to have a divine mission as avenging angel required him and his brother Adam to become his 'demon-slaying' murder accomplices. And how hard an dangerously revolting proved. But when Doyle accepts to be shown concealed victim graves, the plot twists in the present just as gruesomely.
+            </td>
+          </tr>
+          <tr>
+            <td class="spoiler" colspan="3">Something to do with demons.</td>
+          </tr>
+        </table>
+
+        <table class="adventure">
+          <thead>
+            <tr class="title_movie">
+              <th colspan="3">Fools Gold</th>
+            </tr>
+          </thead>
+          <tr class="movie_info">
+            <td>2008</td>
+            <td>5 star</td>
+            <td>Adventure</td>
+          </tr>
+          <tr>
+            <td class="description" colspan="3">
+              Benjamin Finnegan (Matthew McConaughey) is a deep-sea treasure hunter certain he's onto the find of the century in waters near an island close to Key West owned by a murderous rap star to whom Ben is in debt. Ben's flat broke and recently divorced from Tess, his long-time research and diving partner whom he still loves. She's nearby, working as a steward aboard the yacht of Nigel Honeycutt, a multimillionaire. The rapper has hired a rival treasurer hunter. Can Ben convince Nigel to bankroll his search, convince Tess to work with him, keep the rapper and his thugs at bay, and find a Spanish treasure hidden for centuries and rich beyond imagination?
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2014 Movie Web Site LLC</p>
+  </footer>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
